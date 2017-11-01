@@ -1,6 +1,14 @@
 <div>
+  <h4>Asteroid Information</h4>
+  {{$ctrl.items.near_earth_objects["2017-01-11"][0].name}}
+  <img class="media-object" ng-src="{{$ctrl.items.url}}" />
+  <list-item ng-repeat="item in $ctrl.items" item=item />
+</div>
+
+
+<!-- <div>
   <h4>{{$ctrl.items.title}}</h4>
   {{$ctrl.items.explanation}}
   <img class="media-object" ng-src="{{$ctrl.items.url}}" />
   <list-item ng-repeat="item in $ctrl.items" item=item />
-</div>
+</div> -->

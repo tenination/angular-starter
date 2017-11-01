@@ -1,7 +1,7 @@
 angular.module('app')
 .service('itemsService', function($http) {
   this.getAll = function(callback) {
-    $http.get('https://api.nasa.gov/planetary/apod?date=2017-10-26&api_key=t5Rklsmd6ulGUv9qOX7RDXvGYpH3an33kdKV1nIB')
+    $http.get('https://api.nasa.gov/neo/rest/v1/feed?start_date=2017-01-11&api_key=t5Rklsmd6ulGUv9qOX7RDXvGYpH3an33kdKV1nIB')
     .then(function({data}) {
       if(callback) {
         callback(data);
