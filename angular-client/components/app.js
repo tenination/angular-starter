@@ -20,6 +20,25 @@ angular.module('app')
     
 
   }, this.inputDateValue);
+
+
+  itemsService.getComments((data) => {
+  	console.log('COMMENTS ARRAY IS', data);
+  	var commentsArray = data;
+  	var commStorage = {};
+  	for (var i = 0; i < commentsArray.length; i++) {
+  		if (!commStorage[`${commentsArray[i].quantity}`]) {
+  			commStorage[`${commentsArray[i].quantity}`] = [];
+  		}
+  		commStorage[`${commentsArray[i].quantity}`].push(commentsArray[i].description);
+  	}
+
+  	this.comments = commStorage;
+    console.log('COMMENTS OBJECT IS', this.comments);
+
+  });
+
+
 })
 .component('app', {
   bindings: {},
