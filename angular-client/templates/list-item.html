@@ -5,6 +5,7 @@
 	<p>Estimated Diameter: {{$ctrl.item.estimated_diameter.feet.estimated_diameter_min}} -  {{$ctrl.item.estimated_diameter.feet.estimated_diameter_max}} ft</p>
 	<p>Miss Distance: {{$ctrl.item.close_approach_data[0].miss_distance.miles}} mi</p>
 	<p>NEO ID: {{$ctrl.item.neo_reference_id}} </p>
+	<p>COMMENTS: {{$ctrl.anycomments($ctrl.item.neo_reference_id)}}</p>
 	<a href="https://ssd.jpl.nasa.gov/sbdb.cgi?sstr={{$ctrl.item.neo_reference_id}}">Detailed info on this asteroid</a>
   <br></br>
 </li>

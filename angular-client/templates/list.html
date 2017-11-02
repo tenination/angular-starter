@@ -1,7 +1,7 @@
 <div>
   <h1>{{$ctrl.items.element_count}} asteroids making their closest approach toward earth this day!</h1>
  <ul>
-  <list-item ng-repeat="item in $ctrl.items.near_earth_objects[$ctrl.keys[0]]" item=item keys="$ctrl.keys" />
+  <list-item ng-repeat="item in $ctrl.items.near_earth_objects[$ctrl.keys[0]]" item=item anycomments="$ctrl.anycomments" comments="$ctrl.comments" keys="$ctrl.keys" />
  </ul>
 </div>
 

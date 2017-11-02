@@ -4,7 +4,9 @@ angular.module('app')
     items: '<',
     dateinput: '<',
     sample: '<', 
-    keys: '<'
+    keys: '<', 
+    comments: '<',
+    anycomments: '<'
 
   },
   controller: function() {

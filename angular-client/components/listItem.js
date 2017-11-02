@@ -3,7 +3,9 @@ angular.module('app')
   bindings: {
     item: '<',
     dateinput: '<',
-    sample: '<'
+    sample: '<', 
+    comments: '<',
+    anycomments: '<'
 
   },
   controller: function() {},

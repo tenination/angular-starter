@@ -12,7 +12,15 @@ angular.module('app')
   			}, this.inputDateValue);
 
 		}
-	}
+	};
+	this.anycomments = function(id) {
+		console.log('ID PASSED IN IS', id);
+		if (this.comments[`${id}`]) {
+			console.log('EXISTS');
+			console.log(this.comments[`${id}`]);
+			return this.comments[`${id}`];
+		}
+	};
   itemsService.getAll((data) => {
     this.items = data;
     this.keys = Object.keys(data.near_earth_objects);
