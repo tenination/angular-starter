@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>{{$ctrl.inputDateValue}}</h1>
-    <input ng-model="$ctrl.inputDateValue" type="text" placeholder="Search" />
+    <input ng-model="$ctrl.inputDateValue" type="text" placeholder="Search" ng-change="$ctrl.handleChange()" />
     <list items="$ctrl.items" dateinput="$ctrl.inputDateValue" sample="$ctrl.sample" keys="$ctrl.keys"/>
   </div>
 </div>
