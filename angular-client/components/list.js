@@ -1,9 +1,14 @@
 angular.module('app')
 .component('list', {
   bindings: {
-    items: '<'
+    items: '<',
+    dateinput: '<',
+    sample: '<', 
+    keys: '<'
 
   },
-  controller: function() {},
+  controller: function() {
+  	console.log('THIS IN list', this);
+  },
   templateUrl: '/templates/list.html'
 });
