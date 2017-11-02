@@ -8,7 +8,6 @@ angular.module('app')
 
   },
   controller: function() {
-  	console.log('THIS IN list', this);
   },
   templateUrl: '/templates/list.html'
 });
