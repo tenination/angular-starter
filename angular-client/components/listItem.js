@@ -4,9 +4,6 @@ angular.module('app')
     item: '<',
     dateinput: '<',
     sample: '<', 
-    comments: '<',
-    anycomments: '<'
-
   },
   controller: function() {},
   templateUrl: '/templates/list-item.html'

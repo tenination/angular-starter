@@ -19,7 +19,6 @@ angular.module('app')
     this.keys = Object.keys(data.near_earth_objects);
     this.sample = '2016-03-11';
     
-
   }, this.inputDateValue);
 
 })
