@@ -1,4 +1,4 @@
-# angular-starter
+# Asteroid Tracker
 Simple Boilerplate for Angular Project
 
 ## To start the app
