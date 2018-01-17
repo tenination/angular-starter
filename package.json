@@ -1,5 +1,5 @@
 {
-  "name": "Asteroid Tracker",
+  "name": "asteroid-tracker-app",
   "version": "1.0.0",
   "description": "Helps you keep track of asteroids closest to earth",
   "main": "index.js",
