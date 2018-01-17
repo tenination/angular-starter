@@ -1,12 +1,12 @@
 {
-  "name": "Angular-Starter",
+  "name": "Asteroid Tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Helps you keep track of asteroids closest to earth",
   "main": "index.js",
   "scripts": {
     "server-dev": "nodemon server/index.js"
   },
-  "author": "Patrick Daly",
+  "author": "Tim Ninan",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.3",
