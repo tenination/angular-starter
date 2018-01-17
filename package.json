@@ -4,7 +4,8 @@
   "description": "Helps you keep track of asteroids closest to earth",
   "main": "index.js",
   "scripts": {
-    "server-dev": "nodemon server/index.js"
+    "server-dev": "nodemon server/index.js",
+    "start" : "node server/index.js"
   },
   "author": "Tim Ninan",
   "license": "ISC",
