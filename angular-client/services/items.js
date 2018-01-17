@@ -16,7 +16,7 @@ angular.module('app')
 
 
   this.getComments = function(callback) {
-    return $http.get(`http://localhost:3000/items`)
+    return $http.get(`/items`)
     .then(function({data}) {
       if(callback) {
         console.log('SUCCESS');
