@@ -1,0 +1,30 @@
+body {
+
+	background-image: url('asteroids.jpg');
+	background-position: center;
+	color: white;
+}
+
+.apptitle {
+	font-size: 50px;
+	text-align: center;
+}
+
+.detailedinfo {
+  color: aqua;
+}
+
+.enterdate {
+  text-align: center;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.inputdate {
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+}
