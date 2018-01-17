@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 var items = require('../database-mysql');
-
+const port = process.env.PORT || 3000;
 
 var app = express();
 app.use(bodyParser.json());
@@ -41,7 +41,7 @@ app.post('/items', function(req, res) {
 
 })
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log('listening on port 3000!');
 });
 
