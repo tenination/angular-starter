@@ -13,14 +13,7 @@ angular.module('app')
 
 		}
 	};
-	this.anycomments = function(id) {
-		console.log('ID PASSED IN IS', id);
-		if (this.comments[`${id}`]) {
-			console.log('EXISTS');
-			console.log(this.comments[`${id}`]);
-			return this.comments[`${id}`];
-		}
-	};
+
   itemsService.getAll((data) => {
     this.items = data;
     this.keys = Object.keys(data.near_earth_objects);
@@ -28,24 +21,6 @@ angular.module('app')
     
 
   }, this.inputDateValue);
-
-
-  itemsService.getComments((data) => {
-  	console.log('COMMENTS ARRAY IS', data);
-  	var commentsArray = data;
-  	var commStorage = {};
-  	for (var i = 0; i < commentsArray.length; i++) {
-  		if (!commStorage[`${commentsArray[i].quantity}`]) {
-  			commStorage[`${commentsArray[i].quantity}`] = [];
-  		}
-  		commStorage[`${commentsArray[i].quantity}`].push(commentsArray[i].description);
-  	}
-
-  	this.comments = commStorage;
-    console.log('COMMENTS OBJECT IS', this.comments);
-
-  });
-
 
 })
 .component('app', {

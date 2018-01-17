@@ -14,22 +14,5 @@ angular.module('app')
     });
   };
 
-
-  this.getComments = function(callback) {
-    return $http.get(`/items`)
-    .then(function({data}) {
-      if(callback) {
-        console.log('SUCCESS');
-        callback(data);
-      }
-    })
-    .catch(function(err) {
-      console.log(err);
-      console.log(err);
-    });
-  };
-
-
-
 });
 
