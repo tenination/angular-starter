@@ -29,7 +29,6 @@ angular.module('app')
 
   }, this.inputDateValue);
 
-
   itemsService.getComments((data) => {
   	console.log('COMMENTS ARRAY IS', data);
   	var commentsArray = data;
@@ -45,8 +44,6 @@ angular.module('app')
     console.log('COMMENTS OBJECT IS', this.comments);
 
   });
-
-
 })
 .component('app', {
   bindings: {},
